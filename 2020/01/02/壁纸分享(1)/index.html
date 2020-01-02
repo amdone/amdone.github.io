@@ -4,13 +4,12 @@
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
   
-    <title>Spark部署指南 | Amdone</title>
+    <title>动漫壁纸分享(1) | Amdone</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="Amdone">
     
-    <meta name="description" content="前言Spark 是一种与 Hadoop 相似的开源集群计算环境，但是两者之间还存在一些不同之处，这些有用的不同之处使 Spark 在某些工作负载方面表现得更加优越，换句话说，Spark 启用了内存分布数据集，除了能够提供交互式查询外，它还可以优化迭代工作负载。
-我采用的是Linux配置Spark集群">
+    <meta name="description" content="大部分来自pixiv，以及在Konachan网站上收集的，老东西了，还有很多，慢慢分享。">
     
     
     
@@ -66,15 +65,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2019/08/02/Spark部署指南/" title="Spark部署指南" itemprop="url">Spark部署指南</a>
+      <a href="/2020/01/02/壁纸分享(1)/" title="动漫壁纸分享(1)" itemprop="url">动漫壁纸分享(1)</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://yoursite.com" title="Amdone">Amdone</a>
     </p>
   <p class="article-time">
-    <time datetime="2019-08-02T07:54:21.000Z" itemprop="datePublished">2019-08-02</time>
-    更新日期:<time datetime="2019-08-02T09:08:15.832Z" itemprop="dateModified">2019-08-02</time>
+    <time datetime="2020-01-02T04:04:21.000Z" itemprop="datePublished">2020-01-02</time>
+    更新日期:<time datetime="2020-01-02T04:04:07.179Z" itemprop="dateModified">2020-01-02</time>
     
   </p>
 </header>
@@ -83,35 +82,28 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1、前提准备"><span class="toc-number">2.</span> <span class="toc-text">1、前提准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、配置-Java-环境"><span class="toc-number">3.</span> <span class="toc-text">2、配置 Java 环境</span></a></li></ol>
+		
 		</div>
 		
-		<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><strong>Spark</strong> 是一种与 <a href="https://baike.baidu.com/item/Hadoop/3526507?fr=aladdin" target="_blank" rel="noopener">Hadoop</a> 相似的开源集群计算环境，但是两者之间还存在一些不同之处，这些有用的不同之处使 Spark 在某些工作负载方面表现得更加优越，换句话说，Spark 启用了内存分布数据集，除了能够提供交互式查询外，它还可以优化迭代工作负载。</p>
-<p>我采用的是Linux配置Spark集群环境，在Hadoop基础上安装Spark</p>
-<h3 id="1、前提准备"><a href="#1、前提准备" class="headerlink" title="1、前提准备"></a>1、前提准备</h3><blockquote>
-<ul>
-<li>1、 Linux + CentOS7</li>
-<li>2、 你的Linux可以联网</li>
-</ul>
-</blockquote>
-<h3 id="2、配置-Java-环境"><a href="#2、配置-Java-环境" class="headerlink" title="2、配置 Java 环境"></a>2、配置 Java 环境</h3><p>这里不能使用linux自带的OpenJDK，hadoop较新版本都是基于OracleJDK的。</p>
-<p>打开终端</p>
-<p>检查自己的Java环境</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa | grep java</span><br></pre></td></tr></table></figure>
-
-<p>如果显示有 <strong>OpenJDK</strong> 字样的软件名，就用以下命令卸载之</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -e --nodeps 软件名字</span><br></pre></td></tr></table></figure>
-
-<p>安装OracleJDK，首先需要下载 JDK</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://111.1.50.20/files/4041000006F611C7/download.oracle.com/otn-pub/java/jdk/8u181-b13/96a7b8442fe848ef90c96a2fad6ed6d1/jdk-8u181-linux-x64.tar.gz</span><br></pre></td></tr></table></figure>
-
+		<p><img src="http://imgsrc.baidu.com/super/pic/item/58ee3d6d55fbb2fbcfb0f640404a20a44723dccd.jpg" alt="001" title="壁纸1"></p>
+<p><img src="http://imgsrc.baidu.com/super/pic/item/77094b36acaf2edd6feae0bb821001e93901934d.jpg" alt="002" title="壁纸2"></p>
+<p><img src="http://imgsrc.baidu.com/super/pic/item/77094b36acaf2edd6feae0bb821001e93901934d.jpg" alt="003" title="壁纸3"></p>
+<p><img src="http://imgsrc.baidu.com/super/pic/item/f703738da9773912ee272c33f7198618367ae25b.jpg" alt="004" title="壁纸4"></p>
+<p><img src="http://imgsrc.baidu.com/super/pic/item/f603918fa0ec08fad411baf556ee3d6d55fbda4b.jpg" alt="005" title="壁纸5"></p>
+<p><img src="http://imgsrc.baidu.com/super/pic/item/ca1349540923dd54a1630e3ade09b3de9c824854.jpg" alt="006" title="壁纸6"></p>
+<p><img src="http://imgsrc.baidu.com/super/pic/item/908fa0ec08fa513da0b8c58c326d55fbb2fbd956.jpg" alt="007" title="壁纸7">  </p>
+<p><img src="http://imgsrc.baidu.com/super/pic/item/c995d143ad4bd11331951e6055afa40f4bfb0503.jpg" alt="008" title="壁纸8"></p>
+<p><img src="http://imgsrc.baidu.com/super/pic/item/c8ea15ce36d3d5391933a6913587e950352ab052.jpg" alt="009" title="壁纸9"></p>
+<p><img src="http://imgsrc.baidu.com/super/pic/item/a50f4bfbfbedab644a06e492f836afc379311e6f.jpg" alt="010" title="壁纸10"></p>
+<hr>
+<p>大部分来自<a href="https://www.pixiv.net/" target="_blank" rel="noopener">pixiv</a>，以及在<a href="http://konachan.net/" target="_blank" rel="noopener">Konachan</a>网站上收集的，老东西了，还有很多，慢慢分享。</p>
   
 	</div>
 		<footer class="article-footer clearfix">
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/Spark/">Spark</a><a href="/tags/搭建环境/">搭建环境</a><a href="/tags/软件/">软件</a><a href="/tags/大数据/">大数据</a><a href="/tags/学习/">学习</a>
+  <span></span> <a href="/tags/壁纸/">壁纸</a><a href="/tags/壁纸分享/">壁纸分享</a><a href="/tags/美图/">美图</a><a href="/tags/动漫/">动漫</a>
   </div>
 
 
@@ -119,7 +111,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="http://yoursite.com/2019/08/02/Spark部署指南/" data-title="Spark部署指南 | Amdone" data-tsina="5264250400" class="share clearfix">
+  <div data-url="http://yoursite.com/2020/01/02/壁纸分享(1)/" data-title="动漫壁纸分享(1) | Amdone" data-tsina="5264250400" class="share clearfix">
   </div>
 
 </div>
@@ -128,19 +120,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2020/01/02/壁纸分享(1)/" title="动漫壁纸分享(1)">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  动漫壁纸分享(1)</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2019/08/02/My-First-Blog/"  title="My First Blog">
+<a href="/2019/08/02/Spark部署指南/"  title="Spark部署指南">
  <strong>NEXT:</strong><br/> 
- <span>My First Blog
+ <span>Spark部署指南
 </span>
 </a>
 </div>
@@ -153,7 +137,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1、前提准备"><span class="toc-number">2.</span> <span class="toc-text">1、前提准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、配置-Java-环境"><span class="toc-number">3.</span> <span class="toc-text">2、配置 Java 环境</span></a></li></ol>
+  
   </div>
 
 <div id="asidepart">
